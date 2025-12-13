@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/uuid.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/uuid",
+      "dest": "/api/uuid.py"
+    },
+    {
+      "src": "/uuid",
+      "dest": "/api/uuid.py"
+    }
+  ]
+}
