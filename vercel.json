@@ -8,6 +8,10 @@
   ],
   "routes": [
     {
+      "src": "/api/uuid",
+      "dest": "/api/uuid.py"
+    },
+    {
       "src": "/uuid",
       "dest": "/api/uuid.py"
     }
