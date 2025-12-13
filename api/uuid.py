@@ -1,4 +1,3 @@
-# api/uuid.py
 import uuid
 import string
 import secrets
@@ -7,7 +6,6 @@ def generate_id(length=8):
     alphabet = string.ascii_lowercase + string.digits
     return ''.join(secrets.choice(alphabet) for _ in range(length))
 
-# Vercel вызывает эту функцию при запросе
 def handler(request):
     return {
         "status": 200,
@@ -21,3 +19,4 @@ def handler(request):
             "message": "Ваш ID сгенерирован!"
         }
     }
+
